@@ -1,0 +1,5 @@
+[package]
+name = "strom"
+version.workspace = true
+edition.workspace = true
+repository.workspace = true

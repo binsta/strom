@@ -1,0 +1,32 @@
+[workspace.package]
+authors = ["Binston Cardoza <binstoncardoza@gmail.com>"]
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/bisnta/strom"
+version = "0.1.0"
+license = "MIT"
+
+[workspace]
+members = [
+    "crates/crypto",
+    "crates/math",
+    "crates/stark",
+    "crates/utils",
+    "bin/strom",
+    "crates/task",
+    "crates/payload",
+]
+default-members = ["bin/strom"]
+
+resolver = "2"
+
+[workspace.dependencies]
+hex = "0.4.2"
+rand = "0.8.4"
+blake3 = "1.4.0"
+sha3 = "0.10.7"
+crossbeam-utils = "0.8.15"
+bincode = "1.3.1"
+serde = { version = "1.0.114", features = ["derive"] }
+log = "0.4.11"
+env_logger = "0.10.0"
