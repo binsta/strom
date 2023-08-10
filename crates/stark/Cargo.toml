@@ -1,5 +1,5 @@
 [package]
-name = "stark"
+name = "st-stark"
 version.workspace = true
 edition.workspace = true
 repository.workspace = true

@@ -1,17 +1,10 @@
 [package]
-name = "st-utils"
+name = "st-prover"
 version.workspace = true
 edition.workspace = true
 repository.workspace = true
 
-[dependencies]
-st-math = {path = "../math"}
 
 [dev-dependencies]
 criterion = "0.5.0"
 num-bigint = "0.4.0"
-
-[features]
-default = ["std"]
-
-std = ["st-math/std"]
